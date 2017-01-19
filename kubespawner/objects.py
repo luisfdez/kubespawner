@@ -80,6 +80,7 @@ def make_pod_spec(
                     'name': 'notebook',
                     'image': image_spec,
                     'command': ['/usr/local/bin/start-singleuser.sh'],
+                    'args': ['--debug'],
                     'imagePullPolicy': image_pull_policy,
                     'ports': [{
                         'containerPort': 8888,
